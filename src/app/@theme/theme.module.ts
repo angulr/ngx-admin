@@ -2,7 +2,10 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { NbAuthModule } from '../@auth/auth.module';
+import { NbEmailPassAuthProvider } from '../@auth/providers/email-pass-auth.provider';
+import * as config from '../../assets/appsettings.json';
+ 
 import {
   NbActionsModule,
   NbCardModule,
@@ -85,12 +88,20 @@ const PIPES = [
 const NB_THEME_PROVIDERS = [
   ...NbThemeModule.forRoot(
     {
-      name: 'cosmic',
+      name: config.default.theamName[0],
     },
     [ DEFAULT_THEME, COSMIC_THEME ],
   ).providers,
   ...NbSidebarModule.forRoot().providers,
   ...NbMenuModule.forRoot().providers,
+  NbAuthModule.forRoot({
+    providers: {
+      email: {
+        service: NbEmailPassAuthProvider,
+        config: {},
+      }
+    }
+  }).providers,
 ];
 
 @NgModule({

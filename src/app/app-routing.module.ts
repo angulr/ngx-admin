@@ -1,5 +1,6 @@
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
+import { AppRoutingGuard } from './app.routing.guard';
 import {
   NbAuthComponent,
   NbLoginComponent,
@@ -7,10 +8,9 @@ import {
   NbRegisterComponent,
   NbRequestPasswordComponent,
   NbResetPasswordComponent,
-} from '@nebular/auth';
+} from '../app/@auth';
 
-const routes: Routes = [
-  { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule' },
+let routes: Routes = [
   {
     path: 'auth',
     component: NbAuthComponent,
@@ -41,16 +41,17 @@ const routes: Routes = [
       },
     ],
   },
-  { path: '', redirectTo: 'pages', pathMatch: 'full' },
-  { path: '**', redirectTo: 'pages' },
+  { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule', canActivate: [AppRoutingGuard], },
+  { path: '', redirectTo: 'pages', pathMatch: 'full', },
+  { path: '**', redirectTo: 'pages', },
 ];
 
-const config: ExtraOptions = {
+const extraConfig: ExtraOptions = {
   useHash: true,
 };
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, config)],
+  imports: [RouterModule.forRoot(routes, extraConfig)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {

@@ -3,6 +3,10 @@ declare module "*.json" {
     const value: {
         enableToggleLayout?: boolean;
         enableTheamSwitcher?: boolean;
+        enableLayoutSwitcher?: boolean;
+        enableSearchOnHeader?: boolean;
+        enableEMailNotificationOnHeader?: boolean;
+        enableBellNotificationOnHeader?: boolean;
         theamName?: string;
         enableAuth? : boolean; 
         app?: {

@@ -1,5 +1,5 @@
 import { NbMenuItem } from '@nebular/theme';
-
+import * as config from '../../assets/appsettings.json';
 export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Dashboard',
@@ -10,6 +10,30 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'FEATURES',
     group: true,
+  },
+  {
+    hidden: !config.default.enableAuth,
+    title: 'Auth',
+    icon: 'nb-locked',
+    expanded: true,
+    children: [
+      {
+        title: 'Login',
+        link: '/auth/login',
+      },
+      {
+        title: 'Register',
+        link: '/auth/register',
+      },
+      {
+        title: 'Request Password',
+        link: '/auth/request-password',
+      },
+      {
+        title: 'Reset Password',
+        link: '/auth/reset-password',
+      },
+    ],
   },
   {
     title: 'UI Features',
