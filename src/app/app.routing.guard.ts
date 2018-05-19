@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 import * as config from '../assets/appsettings.json';
 @Injectable()
 export class AppRoutingGuard implements CanActivate {
@@ -12,7 +11,7 @@ export class AppRoutingGuard implements CanActivate {
             if (isAuth) {
                 return true;
             } else {
-                window.alert("You don't have permission to view this page");
+                window.alert('You don\'t have permission to view this page');
                 this.router.navigate(['auth']);
                 return false;
             }

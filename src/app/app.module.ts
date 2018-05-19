@@ -37,10 +37,10 @@ import { HttpModule } from '@angular/http';
   bootstrap: [AppComponent],
   providers: [
     AppRoutingGuard,
-    { 
+    {
       provide: HTTP_INTERCEPTORS,
       useClass: NbAuthJWTInterceptor,
-      multi: true
+      multi: true,
     },
     { provide: APP_BASE_HREF, useValue: '/' },
   ],

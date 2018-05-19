@@ -11,4 +11,4 @@ $theme: (
   socials-hover-color: color-white,
 );
 
-$nb-themes: nb-register-theme($theme, cosmic, cosmic);
+$nb-themes: ngx-register-theme($theme, cosmic, cosmic);

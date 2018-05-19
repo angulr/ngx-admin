@@ -10,7 +10,7 @@ import {
   NbResetPasswordComponent,
 } from '../app/@auth';
 
-let routes: Routes = [
+const routes: Routes = [
   {
     path: 'auth',
     component: NbAuthComponent,
@@ -41,9 +41,9 @@ let routes: Routes = [
       },
     ],
   },
-  { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule', canActivate: [AppRoutingGuard], },
-  { path: '', redirectTo: 'pages', pathMatch: 'full', },
-  { path: '**', redirectTo: 'pages', },
+  { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule', canActivate: [AppRoutingGuard] },
+  { path: '', redirectTo: 'pages', pathMatch: 'full' },
+  { path: '**', redirectTo: 'pages' },
 ];
 
 const extraConfig: ExtraOptions = {

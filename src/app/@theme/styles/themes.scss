@@ -6,7 +6,7 @@
 // which themes you what to enable (empty to enable all)
 $nb-enabled-themes: (default, cosmic);
 
-$nb-themes: nb-register-theme((
+$nb-themes: ngx-register-theme((
  // app wise variables for each theme
   sidebar-header-gap: 2rem,
   sidebar-header-height: initial,
@@ -16,7 +16,7 @@ $nb-themes: nb-register-theme((
   font-secondary: Exo,
 ), default, default);
 
-$nb-themes: nb-register-theme((
+$nb-themes: ngx-register-theme((
   // app wise variables for each theme
   sidebar-header-gap: 2rem,
   sidebar-header-height: initial,

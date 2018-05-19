@@ -7,7 +7,7 @@ import { NbAuthService } from '../../services/auth.service';
 import { NbAuthResult } from '../../services/auth-result';
 
 @Component({
-  selector: 'nb-logout',
+  selector: 'ngx-logout',
   template: `
     <div>Logging out, please wait...</div>
   `,

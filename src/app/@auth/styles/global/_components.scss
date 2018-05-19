@@ -8,5 +8,5 @@
 
 // Create a theme
 @mixin nb-auth-components() {
-  @include nb-auth-block-theme();
+  @include ngx-auth-block-theme();
 }

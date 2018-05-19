@@ -12,9 +12,9 @@ import { NbAuthService } from '../../services/auth.service';
 import { NbAuthResult } from '../../services/auth-result';
 
 @Component({
-  selector: 'nb-login',
+  selector: 'ngx-login',
   template: `
-    <nb-auth-block>
+    <ngx-auth-block>
       <h2 class="title">Sign In</h2>
       <small class="form-text sub-title">Hello! Sign in with your username or email</small>
 
@@ -104,11 +104,10 @@ import { NbAuthResult } from '../../services/auth-result';
           Don't have an account? <a routerLink="../auth/register"><strong>Sign Up</strong></a>
         </small>
       </div>
-    </nb-auth-block>
+    </ngx-auth-block>
   `,
 })
-export class NbLoginComponent implements OnInit{
-
+export class NbLoginComponent implements OnInit {
   redirectDelay: number = 0;
   showMessages: any = {};
   provider: string = '';
@@ -149,7 +148,7 @@ export class NbLoginComponent implements OnInit{
       const redirect = result.getRedirect();
       if (redirect) {
         setTimeout(() => {
-          return this.router.navigate(['pages','dashboard']);
+          return this.router.navigate(['pages', 'dashboard']);
         }, this.redirectDelay);
       }
     });

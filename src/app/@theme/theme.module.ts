@@ -5,7 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NbAuthModule } from '../@auth/auth.module';
 import { NbEmailPassAuthProvider } from '../@auth/providers/email-pass-auth.provider';
 import * as config from '../../assets/appsettings.json';
- 
+
 import {
   NbActionsModule,
   NbCardModule,
@@ -99,8 +99,8 @@ const NB_THEME_PROVIDERS = [
       email: {
         service: NbEmailPassAuthProvider,
         config: {},
-      }
-    }
+      },
+    },
   }).providers,
 ];
 

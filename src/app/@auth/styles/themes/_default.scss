@@ -11,4 +11,4 @@ $theme: (
   socials-hover-color: color-fg-text,
 );
 
-$nb-themes: nb-register-theme($theme, default, default);
+$nb-themes: ngx-register-theme($theme, default, default);
