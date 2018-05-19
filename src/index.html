@@ -2,7 +2,25 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>ngx-admin Demo Application</title>
+  <script>
+    function readTextFile(file, callback) {
+      var rawFile = new XMLHttpRequest();
+      rawFile.overrideMimeType("application/json");
+      rawFile.open("GET", file, true);
+      rawFile.onreadystatechange = function () {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+          callback(rawFile.responseText);
+        }
+      }
+      rawFile.send(null);
+    }
+
+    readTextFile("/assets/appsettings.json", function (text) {
+      var data = JSON.parse(text);
+      document.getElementsByTagName("title")[0].innerHTML = data.default.app.title;
+    });
+  </script>
+  <title></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="favicon.png">
