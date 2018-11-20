@@ -5,7 +5,7 @@ import * as config from '../../../assets/appsettings.json';
 
 @Injectable()
 export class PersonService {
-    TOKEN_KEY = 'token'
+    TOKEN_KEY = 'token';
 
     constructor(private http: HttpClient) {
     }
@@ -51,30 +51,30 @@ export class PersonService {
     }
 
     get token() {
-        return localStorage.getItem(this.TOKEN_KEY)
+        return localStorage.getItem(this.TOKEN_KEY);
     }
 
     get isAuthenticated(): boolean {
-        return !!localStorage.getItem(this.TOKEN_KEY)
+        return !!localStorage.getItem(this.TOKEN_KEY);
     }
 
     logout() {
-        localStorage.removeItem(this.TOKEN_KEY)
+        localStorage.removeItem(this.TOKEN_KEY);
     }
 
     registerUser(registerData) {
         this.http.post<any>(config.default.api.native.authendpoint + '/register', registerData).subscribe(res => {
-            this.saveToken(res.token)
-        })
+            this.saveToken(res.token);
+        });
     }
 
     loginUser(loginData) {
         this.http.post<any>(config.default.api.native.authendpoint + '/login', loginData).subscribe(res => {
-            this.saveToken(res.token)
-        })
+            this.saveToken(res.token);
+        });
     }
 
     saveToken(token) {
-        localStorage.setItem(this.TOKEN_KEY, token)
+        localStorage.setItem(this.TOKEN_KEY, token);
     }
 }
