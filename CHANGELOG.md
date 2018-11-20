@@ -1,3 +1,64 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/akveo/ngx-admin/compare/v2.3.0...v3.0.0) (2018-11-19)
+
+
+### Bug Fixes
+
+* **buttons:** change tiny button class to x-small ([#1826](https://github.com/akveo/ngx-admin/issues/1826)) ([a721fd8](https://github.com/akveo/ngx-admin/commit/a721fd8))
+* **chart:** resize chart on sidebar expand/collapse ([#1816](https://github.com/akveo/ngx-admin/issues/1816)) ([aa8e7cd](https://github.com/akveo/ngx-admin/commit/aa8e7cd))
+* **readme:** update doc (starter kit) link ([#1770](https://github.com/akveo/ngx-admin/issues/1770)) ([6456141](https://github.com/akveo/ngx-admin/commit/6456141))
+* **tslint:** add correct semicolon option ([#1777](https://github.com/akveo/ngx-admin/issues/1777)) ([00e6ca5](https://github.com/akveo/ngx-admin/commit/00e6ca5))
+
+
+### Features
+
+* **app:** update Nebular to the latest 2.0.1 version ([#1868](https://github.com/akveo/ngx-admin/issues/1868)) ([16bcc90](https://github.com/akveo/ngx-admin/commit/16bcc90)), closes [#1866](https://github.com/akveo/ngx-admin/issues/1866)
+* **dashboard:** add new E-commerce dashboard ([#1754](https://github.com/akveo/ngx-admin/issues/1754)) ([56e4709](https://github.com/akveo/ngx-admin/commit/56e4709))
+* **icons:** update font awesome to 5.2.0 ([#1798](https://github.com/akveo/ngx-admin/issues/1798)) ([f20c371](https://github.com/akveo/ngx-admin/commit/f20c371))
+* add a bunch of new Nebular demos ([#1911](https://github.com/akveo/ngx-admin/issues/1911)) ([3f1f4c5](https://github.com/akveo/ngx-admin/commit/3f1f4c5))
+* **icons:** add eva-icons ([#1912](https://github.com/akveo/ngx-admin/issues/1912)) ([b3d7b7b](https://github.com/akveo/ngx-admin/commit/b3d7b7b))
+* add ng2-completer to dependencies list ([3482404](https://github.com/akveo/ngx-admin/commit/3482404))
+* **app:** angular 7+ update ([#1910](https://github.com/akveo/ngx-admin/issues/1910)) ([aa7579c](https://github.com/akveo/ngx-admin/commit/aa7579c)), closes [#1890](https://github.com/akveo/ngx-admin/issues/1890)
+* **app:** update Nebular to 3.0.0 version ([#1916](https://github.com/akveo/ngx-admin/issues/1916)) ([c594a5a](https://github.com/akveo/ngx-admin/commit/c594a5a))
+* **app:** update Nebular to rc.10 ([50961f3](https://github.com/akveo/ngx-admin/commit/50961f3))
+
+
+### BREAKING CHANGES
+
+* Angular 7+ now required.
+The following libraries were updated:
+- @agm/core
+- @ng-bootstrap/ng-bootstrap
+- @swimlane/ngx-charts
+- ng2-ckeditor
+- ngx-echarts
+* **icons:** Since this is a major package update we recommend looking through the upgrade guide https://fontawesome.com/how-to-use/on-the-web/setup/upgrading-from-version-4
+
+
+
+<a name="2.3.0"></a>
+# [2.3.0 - Corporate Theme](https://github.com/akveo/ngx-admin/compare/v2.2.0...v2.3.0) (2018-06-22)
+
+
+### Bug Fixes
+
+* **buttons:** Uncheck checkbox after click ([#1721](https://github.com/akveo/ngx-admin/issues/1721)) ([fbe12a9](https://github.com/akveo/ngx-admin/commit/fbe12a9)), closes [#1697](https://github.com/akveo/ngx-admin/issues/1697)
+* **readme:** update docs link ([#1743](https://github.com/akveo/ngx-admin/issues/1743)) ([a6d5d49](https://github.com/akveo/ngx-admin/commit/a6d5d49))
+* **temperature:** fix temperature dragger gradient, fix switcher button hover background ([#1745](https://github.com/akveo/ngx-admin/issues/1745)) ([f12bd9f](https://github.com/akveo/ngx-admin/commit/f12bd9f))
+* **tree:** fix tree component, replace ng2-tree on the angular-tree-component ([22c161f](https://github.com/akveo/ngx-admin/commit/22c161f)), closes [#1690](https://github.com/akveo/ngx-admin/issues/1690)
+
+
+### Features
+
+* update Nebular to rc.9 ([#1741](https://github.com/akveo/ngx-admin/issues/1741)) ([18a4750](https://github.com/akveo/ngx-admin/commit/18a4750))
+* **app:** set default font-size to 14px ([#1742](https://github.com/akveo/ngx-admin/issues/1742)) ([6d705d2](https://github.com/akveo/ngx-admin/commit/6d705d2))
+* **icons:** update icons, add new nebular icons to icons list ([#1738](https://github.com/akveo/ngx-admin/issues/1738)) ([cef6ea6](https://github.com/akveo/ngx-admin/commit/cef6ea6))
+* **readme:** add new theme ([#1744](https://github.com/akveo/ngx-admin/issues/1744)) ([d25ad7a](https://github.com/akveo/ngx-admin/commit/d25ad7a))
+* **theme:** add corporate theme ([#1727](https://github.com/akveo/ngx-admin/issues/1727)) ([e37f12d](https://github.com/akveo/ngx-admin/commit/e37f12d))
+* **toaster:** update toaster to latest version (6.0.0) ([#1722](https://github.com/akveo/ngx-admin/issues/1722)) ([b85034e](https://github.com/akveo/ngx-admin/commit/b85034e))
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/akveo/ngx-admin/compare/v2.1.1...v2.2.0) (2018-05-14)
 

@@ -8,13 +8,11 @@ node_js:
   - '9'
   - '10'
 
-cache:
-  directories:
-    - node_modules
-
 branches:
   only:
   - master
+  - starter-kit
+  - demo
 
 addons:
   apt:

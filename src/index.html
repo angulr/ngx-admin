@@ -2,6 +2,11 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <title>ngx-admin Demo Application</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script>
     function readTextFile(file, callback) {
       var rawFile = new XMLHttpRequest();
@@ -17,15 +22,9 @@
 
     readTextFile("/assets/appsettings.json", function (text) {
       var data = JSON.parse(text);
-      console.log(data)
       document.getElementsByTagName("title")[0].innerHTML = data.app.title;
     });
   </script>
-  <title></title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
   <ngx-app>Loading...</ngx-app>
