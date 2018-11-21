@@ -26,6 +26,9 @@ import { EchartsAreaStackComponent } from './echarts/echarts-area-stack.componen
 import { EchartsBarAnimationComponent } from './echarts/echarts-bar-animation.component';
 import { EchartsRadarComponent } from './echarts/echarts-radar.component';
 
+import { CustomChartBarComponent } from './custom-charts/custom-charts-bar.component';
+
+
 const components = [
   ChartjsBarComponent,
   ChartjsLineComponent,
@@ -46,10 +49,11 @@ const components = [
   EchartsAreaStackComponent,
   EchartsBarAnimationComponent,
   EchartsRadarComponent,
+  CustomChartBarComponent
 ];
 
 @NgModule({
   imports: [ThemeModule, ChartsRoutingModule, NgxEchartsModule, NgxChartsModule, ChartModule],
   declarations: [...routedComponents, ...components],
 })
-export class ChartsModule {}
+export class ChartsModule { }

@@ -186,6 +186,10 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'nb-bar-chart',
     children: [
       {
+        title: 'Custom D3 Charts',
+        link: '/pages/charts/custom',
+      },
+      {
         title: 'Echarts',
         link: '/pages/charts/echarts',
       },
