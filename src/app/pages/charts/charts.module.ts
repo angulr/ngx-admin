@@ -49,7 +49,7 @@ const components = [
   EchartsAreaStackComponent,
   EchartsBarAnimationComponent,
   EchartsRadarComponent,
-  CustomChartBarComponent
+  CustomChartBarComponent,
 ];
 
 @NgModule({

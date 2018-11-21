@@ -25,7 +25,6 @@ export class CustomChartBarComponent implements OnDestroy {
     { name: 'Jharkhand', value: 4500 },
     { name: 'Goa', value: 2900 },
     { name: 'Himanchal', value: 900 },
-    
   ];
   showLegend = true;
   showXAxis = true;
@@ -37,9 +36,9 @@ export class CustomChartBarComponent implements OnDestroy {
 
   constructor(private theme: NbThemeService) {
     this.themeSubscription = this.theme.getJsTheme().subscribe(config => {
-      const colors: any = config.variables;
+      // const colors: any = config.variables;
       this.colorScheme = {
-        domain: ["red","blue","green","yellow","#55af34","#002315","#442318","blue","green"],
+        domain: ['red', 'blue', 'green', 'yellow', '#55af34', '#002315', '#442318', 'blue', 'green'],
       };
     });
   }

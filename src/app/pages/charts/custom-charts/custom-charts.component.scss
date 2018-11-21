@@ -1,8 +1,7 @@
 @import '../../../@theme/styles/themes';
 
 @include nb-install-component() {
-  ngx-d3-bar,
-  {
+  ngx-d3-bar {
     display: block;
     width: 100%;
     height: nb-theme(card-height-medium);
